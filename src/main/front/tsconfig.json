@@ -1,14 +1,15 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
+    "baseUrl": "./src", // import root path
+    "outDir": "./dist/", // path to output directory
     "sourceMap": true,
     "noImplicitAny": true,
-    "module": "esnext",
+    "module": "esnext", // TypeScript supports commonjs, amd, umd, es6, es2015, esnext
     "target": "es5",
     "jsx": "react",
     "allowJs": true,
     "moduleResolution": "node",
-    "rootDir": "src",
+    "rootDir": "src", // compile root directory
     "lib": [
       "dom",
       "dom.iterable",
