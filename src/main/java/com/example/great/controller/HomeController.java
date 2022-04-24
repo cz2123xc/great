@@ -12,21 +12,8 @@ public class HomeController {
         return "aaaaaaaaaaaaaaa";
     }
 
-//    @GetMapping("/home")
-//    public String home3() {
-//        return "aaaaaaaaaaaaaaa";
-//    }
-//
-//    @GetMapping("/aa")
-//    public String index2() {
-//        return "bbbbbbbbbbbb";
-//    }
-//
-//
-//    @GetMapping("/")
-//    public String index() {
-//        return "bbbbbbbbbbbb";
-//    }
-
-
+    @GetMapping("/home")
+    public String home3() {
+        return "aaaaaaaaaaaaaaa";
+    }
 }

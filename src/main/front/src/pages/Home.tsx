@@ -6,7 +6,6 @@ export default function Home() {
 
     const [sec, setSec] = React.useState(0);
 
-
     useEffect(() => {
         const interval = setInterval(() => {
             setSec(sec => sec + 1);

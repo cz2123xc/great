@@ -3,8 +3,8 @@ import Theme from "./styles/Theme";
 import { ThemeProvider } from "./styles/ThemeComponents";
 import React from 'react';
 import './App.css';
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
-import Home from './pages/Home';
+import {BrowserRouter, Routes} from 'react-router-dom';
+import DefaultRoute from './Routes/DefaultRoute';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 
@@ -14,13 +14,7 @@ function App() {
         <div className="App">
             <ThemeProvider theme={Theme}>
                 <GlobalStyle />
-                <BrowserRouter>
-                    <Header/>
-                    <Routes>
-                        <Route path="/index" element={<Home />} />
-                    </Routes>
-                    <Footer/>
-                </BrowserRouter>
+                <DefaultRoute />
             </ThemeProvider>
         </div>
     );
